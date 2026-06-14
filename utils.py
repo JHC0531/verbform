@@ -50,10 +50,22 @@ RACCOON_MESSAGES = {
 }
 
 
+def _read_csv_safe(path):
+    """어떤 인코딩으로 저장된 CSV든 안전하게 읽기
+    (엑셀에서 저장하면 utf-16/cp949 등으로 바뀌어 깨지는 경우 대비)"""
+    for enc in ("utf-8-sig", "utf-8", "utf-16", "cp949", "euc-kr"):
+        try:
+            return pd.read_csv(path, encoding=enc)
+        except (UnicodeDecodeError, UnicodeError):
+            continue
+    # 마지막 수단: 깨진 문자는 무시하고 읽기
+    return pd.read_csv(path, encoding="utf-8", encoding_errors="ignore")
+
+
 @st.cache_data
 def load_verbs() -> pd.DataFrame:
     """CSV 파일을 읽어서 정제된 DataFrame으로 반환"""
-    df = pd.read_csv(DATA_PATH)
+    df = _read_csv_safe(DATA_PATH)
     df = df.rename(columns={
         "유형": "type",
         "동사원형": "base",
@@ -77,7 +89,7 @@ def get_irregular_verbs() -> pd.DataFrame:
 @st.cache_data
 def load_rules_quiz() -> pd.DataFrame:
     """규칙변화 미니퀴즈 데이터 (규칙번호/동사원형/정답/오답1/오답2/예문)"""
-    df = pd.read_csv(RULES_CSV_PATH)
+    df = _read_csv_safe(RULES_CSV_PATH)
     for col in df.columns:
         df[col] = df[col].astype(str).str.strip()
     return df
@@ -86,7 +98,7 @@ def load_rules_quiz() -> pd.DataFrame:
 @st.cache_data
 def load_cert_quiz() -> pd.DataFrame:
     """학습인증 30문항 데이터"""
-    df = pd.read_csv(CERT_CSV_PATH)
+    df = _read_csv_safe(CERT_CSV_PATH)
     # 음성파일이름은 NaN일 수 있으므로 별도 처리
     df["음성파일이름"] = df["음성파일이름"].fillna("").astype(str).str.strip()
     for col in ["유형", "질문", "A", "B", "C", "정답", "그림파일이름"]:
