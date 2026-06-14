@@ -10,9 +10,9 @@ import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 
 BASE_DIR = Path(__file__).parent
-DATA_PATH = BASE_DIR / "data" / "불규칙동사_레벨분류완성.xlsx"
-RULES_CSV_PATH = BASE_DIR / "data" / "중1_과거형_퀴즈_매력적오답.csv"
-CERT_CSV_PATH = BASE_DIR / "data" / "과거형_3단변화_30문항_이미지포함.csv"
+DATA_PATH = BASE_DIR / "data" / "irregular_verbs.xlsx"
+RULES_CSV_PATH = BASE_DIR / "data" / "rules_quiz.csv"
+CERT_CSV_PATH = BASE_DIR / "data" / "data" / "cert_quiz.csv"
 IMAGES_DIR = BASE_DIR / "data" / "images"
 AUDIO_DIR = BASE_DIR / "data" / "audio"
 MASCOT_PATH = BASE_DIR / "assets" / "raccoon.png"
