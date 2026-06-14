@@ -1,0 +1,31 @@
+﻿문제번호,유형,음성파일이름,질문,A,B,C,정답,그림파일이름
+1,spelling,,"Yesterday, we ______ basketball after school.",playyed,plaied,played,played,q01_basketball.png
+2,spelling,,My sister ______ a beautiful song at the concert.,sanged,sang,songed,sang,q02_sang.png
+3,spelling,,We ______ our homework before dinner.,finised,finished,finish,finished,q03_homework.png
+4,spelling,,He ______ his bike to school yesterday.,rode,roed,rided,rode,q04_bike.png
+5,spelling,,They ______ a new movie last night.,watched,watch,watcheed,watched,q05_movie.png
+6,spelling,,The cat ______ onto the table.,jumpted,jump,jumped,jumped,q06_jumped.png
+7,spelling,,I ______ my room this morning.,cleand,cleaned,clean,cleaned,q07_cleaned.png
+8,spelling,,We ______ in the sea last summer.,swummed,swimmed,swam,swam,q08_swam.png
+9,spelling,,She ______ a letter to her pen pal.,written,writed,wrote,wrote,q09_wrote.png
+10,spelling,,The baby ______ loudly last night.,cride,cryed,cried,cried,q10_cried.png
+11,irregular_past,,"Last weekend, I ______ many pictures.",took,taked,taken,took,q11_pictures.png
+12,irregular_past,,She ______ to the beach with her family.,gone,goed,went,went,q12_beach.png
+13,irregular_past,,He ______ his keys on the bus.,lost,losted,loosed,lost,q13_keys.png
+14,irregular_past,,They ______ a big cake for her birthday.,made,make,maked,made,q14_cake.png
+15,irregular_past,,I ______ up early and had breakfast.,get,got,gotten,got,q15_gotup.png
+16,irregular_past,,My brother ______ his toy yesterday.,found,finded,founded,found,q16_found.png
+17,irregular_past,,We ______ dinner at a nice restaurant.,haded,haved,had,had,q17_dinner.png
+18,irregular_past,,The lights ______ out during the storm.,went,goed,gone,went,q18_storm.png
+19,irregular_past,,She ______ the door before leaving.,shooted,shutted,shut,shut,q19_door.png
+20,irregular_past,,He ______ to me last night.,spoked,spoken,spoke,spoke,q20_spoke.png
+21,audio,visited.mp3,음성을 듣고 문맥에 알맞은 철자를 고르시오. We ______ a museum during the school trip.,visited,visitted,visitd,visited,q21_museum.png
+22,audio,played.mp3,음성을 듣고 문맥에 알맞은 철자를 고르시오. I ______ the piano at the recital.,playyed,played,plaied,played,q22_piano.png
+23,audio,made.mp3,음성을 듣고 문맥에 알맞은 단어를 고르시오. My mom ______ a delicious dinner.,made,makes,maded,made,q23_made_dinner.png
+24,audio,went.mp3,음성을 듣고 문맥에 알맞은 단어를 고르시오. We ______ to the mountains last winter.,gone,goed,went,went,q24_mountain.png
+25,audio,saw.mp3,음성을 듣고 문맥에 알맞은 단어를 고르시오. I ______ a shooting star in the sky.,saw,see,seen,saw,q25_saw_star.png
+26,pp_pattern,,<보기> I have met him before. 같은 형식으로 문장을 완성하시오. She has ______ the letter back to her mother. (send → sent → ?),sent,sending,send,sent,q26_sent_letter.png
+27,pp_pattern,,<보기> I have eaten lunch already. 같은 형식으로 문장을 완성하시오. He has ______ all of his homework. (finish → finished → ?),finished,finishing,finish,finished,q27_finished_hw.png
+28,pp_pattern,,<보기> They have seen the movie. 같은 형식으로 문장을 완성하시오. We have ______ that show before. (see → saw → ?),see,seen,seeing,seen,q28_seen_movie.png
+29,pp_pattern,,<보기> The window has been cleaned. 같은 형식으로 문장을 완성하시오. The room has been ______ by my brother. (clean → cleaned → ?),cleaning,cleaned,clean,cleaned,q29_cleaned_room.png
+30,pp_pattern,,<보기> The cake has been made by her. 같은 형식으로 문장을 완성하시오. The book has been ______ by my teacher. (write → wrote → ?),wrote,write,written,written,q30_written_book.png
