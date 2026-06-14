@@ -72,4 +72,3 @@ with c3:
     </div>
     """, unsafe_allow_html=True)
     st.page_link("pages/3_학습인증하기.py", label="학습인증 시작하기 →", icon="🏅")
-
