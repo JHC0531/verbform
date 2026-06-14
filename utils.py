@@ -10,7 +10,7 @@ import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 
 BASE_DIR = Path(__file__).parent
-DATA_PATH = BASE_DIR / "data" / "irregular_verbs.xlsx"
+DATA_PATH = BASE_DIR / "data" / "irregular_verbs.csv"
 RULES_CSV_PATH = BASE_DIR / "data" / "rules_quiz.csv"
 CERT_CSV_PATH = BASE_DIR / "data" / "data" / "cert_quiz.csv"
 IMAGES_DIR = BASE_DIR / "data" / "images"
@@ -53,7 +53,7 @@ RACCOON_MESSAGES = {
 @st.cache_data
 def load_verbs() -> pd.DataFrame:
     """엑셀 파일을 읽어서 정제된 DataFrame으로 반환"""
-    df = pd.read_excel(DATA_PATH)
+    df = pd.read_csv(DATA_PATH)
     df = df.rename(columns={
         "유형": "type",
         "동사원형": "base",
